@@ -21,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="SwVvoBPHeYFSEt-9gIpD4ueJtFpVpouvYoGIgXv0xuc" />
+      </head>
       <body className="bg-slate-900 text-slate-100">
         {/* main bertindak sebagai container utama dengan flexbox */}
         <main className="min-h-screen flex flex-col">
