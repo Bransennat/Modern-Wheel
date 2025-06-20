@@ -1,41 +1,50 @@
+import type { Metadata } from 'next';
 import React from 'react';
+
+// Metadata for your Privacy Policy page
+export const metadata: Metadata = {
+  title: 'Privacy Policy - Modern Wheel',
+  description: 'Privacy Policy for the Modern Wheel application, detailing the data we collect and how it is used.',
+};
 
 const PrivacyPolicyPage: React.FC = () => {
   return (
-    <div className="max-w-4xl mx-auto p-4 sm:p-8 text-slate-300">
-      <h1 className="text-4xl font-bold mb-6 text-white">Kebijakan Privasi</h1>
-      
-      <div className="prose prose-invert max-w-none">
-        <p><em>Terakhir diperbarui: 17 Juni 2025</em></p>
-
-        <h2 className="text-2xl font-semibold mt-6">1. Informasi yang Kami Kumpulkan</h2>
-        <p>
-          Kami mengumpulkan informasi yang Anda berikan secara langsung kepada kami. Untuk aplikasi Modern Wheel, ini termasuk:
-        </p>
-        <ul>
-          <li>
-            <strong>Data Entri:</strong> Nama atau teks apa pun yang Anda masukkan ke dalam area input untuk diputar di roda. Data ini disimpan sementara di browser Anda menggunakan teknologi `localStorage` untuk menjaga sesi Anda tetap aktif, tetapi tidak dikirim atau disimpan di server kami.
-          </li>
-        </ul>
-
-        <h2 className="text-2xl font-semibold mt-6">2. Bagaimana Kami Menggunakan Informasi Anda</h2>
-        <p>
-          Informasi yang Anda berikan hanya digunakan untuk fungsi inti aplikasi:
-        </p>
-        <ul>
-          <li>Untuk menampilkan entri pada segmen roda putar.</li>
-          <li>Untuk menentukan dan mengumumkan pemenang secara acak.</li>
-          <li>Untuk menyimpan daftar entri di browser Anda agar tidak hilang saat halaman dimuat ulang.</li>
-        </ul>
-
-        {/* Anda bisa melanjutkan menambahkan poin lain di sini... */}
+    <main className="flex-grow">
+      <div className="max-w-4xl mx-auto p-4 sm:p-8 text-slate-300">
+        <h1 className="text-4xl font-bold mb-6 text-white">Privacy Policy</h1>
         
-        <h2 className="text-2xl font-semibold mt-6">Kontak Kami</h2>
-        <p>
-          Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini, silakan hubungi kami di [alamat.email.anda@contoh.com].
-        </p>
+        <div className="prose prose-invert max-w-none text-lg">
+          <p><em>Last updated: June 20, 2025</em></p>
+
+          <h2 className="text-2xl font-semibold mt-8 text-white">1. Information We Collect</h2>
+          <p>
+            We collect information you provide directly to us. For the Modern Wheel application, this includes:
+          </p>
+          <ul className="list-disc pl-5">
+            <li>
+              <strong>Entry Data:</strong> Any names or text you enter into the input area to be spun on the wheel. This data is stored temporarily in your browser using `localStorage` technology to maintain your session, but it is not sent to or stored on our servers.
+            </li>
+          </ul>
+
+          <h2 className="text-2xl font-semibold mt-8 text-white">2. How We Use Your Information</h2>
+          <p>
+            The information you provide is used solely for the core functionality of the application:
+          </p>
+          <ul className="list-disc pl-5">
+            <li>To display the entries on the wheel segments.</li>
+            <li>To randomly determine and announce a winner.</li>
+            <li>To save the list of entries in your browser so it is not lost when the page is reloaded.</li>
+          </ul>
+
+          {/* You can continue adding other points here... */}
+          
+          <h2 className="text-2xl font-semibold mt-8 text-white">Contact Us</h2>
+          <p>
+            If you have any questions about this Privacy Policy, please contact us at [your.email.address@example.com].
+          </p>
+        </div>
       </div>
-    </div>
+    </main>
   );
 };
 
