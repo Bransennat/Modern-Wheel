@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WinnerModal from "@/components/WinnerModal";
 import ConfettiEffect from "@/components/ConfettiEffect";
+import { Analytics } from '@vercel/analytics/react';
 
 // Metadata ini adalah cara Next.js untuk SEO, pengganti Helmet
 export const metadata: Metadata = {
@@ -34,6 +35,7 @@ export default function RootLayout({
         {/* Komponen global ini berada di luar 'main' agar bisa 'mengambang' di atas segalanya */}
         <WinnerModal />
         <ConfettiEffect />
+        <Analytics />
       </body>
     </html>
   );
